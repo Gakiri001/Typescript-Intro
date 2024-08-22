@@ -54,6 +54,28 @@ let employee: {
   },
 };
 
-
 console.log(employee);
-employee.retire(new Date())
+employee.retire(new Date());
+
+//Advanced Types
+//1. Type Aliases. -> DRY - Don't Repeat Yourself
+
+type Employee1 = {
+  readonly id: number;
+  name: string;
+  department: string;
+  retire: (date: Date) => void;
+};
+
+let employee1: Employee1 = {
+  id: 2,
+  name: "Gakiri",
+  department: "IT",
+  retire: (date: Date) => {
+    console.log(date);
+  },
+};
+
+console.log(employee1);
+
+//Union Type

@@ -31,4 +31,13 @@ let employee = {
 };
 console.log(employee);
 employee.retire(new Date());
+let employee1 = {
+    id: 2,
+    name: "Gakiri",
+    department: "IT",
+    retire: (date) => {
+        console.log(date);
+    },
+};
+console.log(employee1);
 //# sourceMappingURL=index.js.map
