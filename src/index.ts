@@ -132,3 +132,25 @@ function greet(name:string | null):string {
  }
 }
 console.log("Hello",greet(""))
+
+//Optional Chaining
+type Customer = {
+  birthday?: Date
+}
+
+function getCustomer(id: number): Customer | null{
+  return id === 0 ? null : {birthday: new Date()}
+}
+
+// console.log("Customer's DOB:", getCustomer(0))
+
+let customer = getCustomer(1)
+// if(customer !== null && customer !== undefined)
+//Optional property access operator
+  console.log(customer?.birthday?.getFullYear())
+
+//Optional element access operator
+
+//optional call
+let log: any = null;
+console.log(log?.("gathee"))
