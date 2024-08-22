@@ -24,7 +24,11 @@ console.log(CalculateTax(10000, 2023));
 let employee = {
     id: 1,
     name: "Julius",
-    department: "Accounts"
+    department: "Accounts",
+    retire: (date) => {
+        console.log(date);
+    },
 };
 console.log(employee);
+employee.retire(new Date());
 //# sourceMappingURL=index.js.map
