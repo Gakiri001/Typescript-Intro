@@ -78,7 +78,7 @@ let employee1: Employee1 = {
 
 console.log(employee1);
 
-//Union Type
+//Union Type -> A variable can be more than one data type
 function kgToLbs(weight: number | string): number {
   //Narrowing
   if(typeof weight === 'number'){
@@ -91,3 +91,23 @@ function kgToLbs(weight: number | string): number {
 
 console.log(kgToLbs(10), 'Lbs')
 console.log(kgToLbs("10kg"), 'Lbs')
+
+//Intersection Types
+type Draggable = {
+  drag: () => number
+}
+
+type Resizable ={
+  resize:() => number
+}
+
+type UIWidget = Draggable & Resizable
+
+let textBox: UIWidget ={
+  drag: () => 9,
+  resize: () => 7
+}
+
+console.log(textBox.drag())
+console.log(textBox.resize())
+
