@@ -111,3 +111,13 @@ let textBox: UIWidget ={
 console.log(textBox.drag())
 console.log(textBox.resize())
 
+
+//Literal Types
+type Quantity = 100 | 50
+let quantity: Quantity = 50
+
+type Metric = 'cm' | 'inch'
+let metric: Metric = 'cm'
+
+console.log('Your Rating is', quantity)
+console.log('The size is 100', metric)

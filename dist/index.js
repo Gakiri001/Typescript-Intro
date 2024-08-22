@@ -56,4 +56,8 @@ let textBox = {
 };
 console.log(textBox.drag());
 console.log(textBox.resize());
+let quantity = 50;
+let metric = 'cm';
+console.log('Your Rating is', quantity);
+console.log('The size is 100', metric);
 //# sourceMappingURL=index.js.map
