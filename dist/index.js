@@ -60,4 +60,13 @@ let quantity = 50;
 let metric = 'cm';
 console.log('Your Rating is', quantity);
 console.log('The size is 100', metric);
+function greet(name) {
+    if (name) {
+        return name.toUpperCase();
+    }
+    else {
+        return "Oyah";
+    }
+}
+console.log("Hello", greet(""));
 //# sourceMappingURL=index.js.map

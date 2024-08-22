@@ -121,3 +121,14 @@ let metric: Metric = 'cm'
 
 console.log('Your Rating is', quantity)
 console.log('The size is 100', metric)
+
+//Nullable Types
+function greet(name:string | null):string {
+  if (name) {
+  return name.toUpperCase()
+  }
+ else{
+  return "Oyah"
+ }
+}
+console.log("Hello",greet(""))
