@@ -79,3 +79,15 @@ let employee1: Employee1 = {
 console.log(employee1);
 
 //Union Type
+function kgToLbs(weight: number | string): number {
+  //Narrowing
+  if(typeof weight === 'number'){
+    return weight * 2.2
+  }
+  else{
+    return parseInt(weight) * 2.2
+  }
+}
+
+console.log(kgToLbs(10), 'Lbs')
+console.log(kgToLbs("10kg"), 'Lbs')

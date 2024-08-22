@@ -40,4 +40,14 @@ let employee1 = {
     },
 };
 console.log(employee1);
+function kgToLbs(weight) {
+    if (typeof weight === 'number') {
+        return weight * 2.2;
+    }
+    else {
+        return parseInt(weight) * 2.2;
+    }
+}
+console.log(kgToLbs(10), 'Lbs');
+console.log(kgToLbs("10kg"), 'Lbs');
 //# sourceMappingURL=index.js.map
